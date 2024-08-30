@@ -42,7 +42,7 @@ COPY docker/nginx/default /etc/nginx/sites-available/default
 COPY docker/fluent-bit/install-fluent-bit.sh /tmp
 RUN /tmp/install-fluent-bit.sh
 
-# Copy your Fluent Bit configuration file into the container
+# Copy Fluent Bit configuration file into the container
 RUN mkdir -p /etc/fluent-bit
 COPY docker/fluent-bit/fluent-bit.conf /etc/fluent-bit
 
